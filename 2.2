@@ -1,0 +1,19 @@
+#include <iostream>
+using namespace std;
+
+int Giaithua(int n)
+{
+    if (n==1)
+    return 1;
+    return Giaithua(n-1) * n;
+    
+}
+int main()
+{
+    int n;
+    cout<<"\n nhap n: ";
+    cin >> n;
+    int S = Giaithua(n);
+    cout << "tong ="<< S;
+    return 0;
+}
